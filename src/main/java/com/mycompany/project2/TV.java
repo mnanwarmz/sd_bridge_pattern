@@ -10,10 +10,12 @@ public class TV implements Device {
 	}
 
 	public int switchChannel(int channel) {
+		System.out.println("You are watching channel " + channel + " Now");
 		return channel;
 	}
 
 	public int soundUp(int volume) {
+		System.out.println("You are listening with a volume of " + volume + " Now");
 		return volume;
 	}
 }
