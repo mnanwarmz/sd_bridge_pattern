@@ -1,6 +1,6 @@
 package com.mycompany.project2;
 
-public class TV {
+public class TV implements Device {
 	public void on() {
 		System.out.println("TV is turned on.");
 	}
@@ -9,7 +9,11 @@ public class TV {
 		System.out.println("TV is turned off.");
 	}
 
-	public void switchChannel(int channel) {
-		System.out.println(" You are Watching Channel " + channel + " Now");
+	public int switchChannel(int channel) {
+		return channel;
+	}
+
+	public int soundUp(int volume) {
+		return volume;
 	}
 }

@@ -1,6 +1,6 @@
 package com.mycompany.project2;
 
-public class Radio {
+public class Radio implements Device {
 
 	public void on() {
 		System.out.println("Radio is turned on.");
@@ -10,7 +10,11 @@ public class Radio {
 		System.out.println("Radio is turned off.");
 	}
 
-	public void switchChannel(int channel) {
-		System.out.println(" You are Listning to Channel " + channel + " Now");
+	public int switchChannel(int channel) {
+		return channel;
+	}
+
+	public int soundUp(int volume) {
+		return volume;
 	}
 }
